@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run application') {
             steps {
-                sh 'cd /var/lib/jenkins/workspace/First Pipeline/target && java -jar spring-boot-gcp-sandbox-0.0.1-SNAPSHOT.jar'
+                sh 'cd /var/lib/jenkins/workspace//'First Pipeline'//target && java -jar spring-boot-gcp-sandbox-0.0.1-SNAPSHOT.jar'
             }
         }
     }
