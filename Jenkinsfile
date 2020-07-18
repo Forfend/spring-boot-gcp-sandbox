@@ -7,5 +7,15 @@ pipeline {
                 echo 'My first pipeline'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+        }
+        stage('Run application') {
+            steps {
+                sh 'cd /var/lib/jenkins/workspace/First Pipeline/target && java -jar spring-boot-gcp-sandbox-0.0.1-SNAPSHOT.jar'
+            }
+        }
     }
 }
