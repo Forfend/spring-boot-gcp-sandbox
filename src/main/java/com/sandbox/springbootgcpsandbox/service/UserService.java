@@ -20,6 +20,12 @@ public class UserService {
                         .firstName("Adam")
                         .lastName("Smith")
                         .email("adam.smith@gmail.com")
+                        .build(),
+                User.builder()
+                        .id(2)
+                        .firstName("Oleh")
+                        .lastName("Onufryk")
+                        .email("oleh.onufryk@gmail.com")
                         .build()
         );
     }
