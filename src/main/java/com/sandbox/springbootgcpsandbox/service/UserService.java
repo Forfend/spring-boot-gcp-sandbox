@@ -22,10 +22,16 @@ public class UserService {
                         .email("adam.smith@gmail.com")
                         .build(),
                 User.builder()
-                        .id(2)
+                        .id(3)
                         .firstName("Oleh")
                         .lastName("Onufryk")
                         .email("oleh.onufryk@gmail.com")
+                        .build(),
+                User.builder()
+                        .id(4)
+                        .firstName("Joe")
+                        .lastName("Biden")
+                        .email("joe.biden@gmail.com")
                         .build()
         );
     }
